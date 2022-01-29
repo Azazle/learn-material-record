@@ -1,3 +1,5 @@
+#lang lazy
+
 (define (pair A B)
   (λ (sel)
     (sel A B)))
@@ -20,8 +22,9 @@
       (* n (fact (subl n)))))
 ;(fact 10)
 
-(define (subl x) (- x 1))
-(define (addl x) (+ x 1))
+
+(define subl (λ(x) (- x 1)))
+(define addl (λ(x) (+ x 1)))
 (define Z (λ (f) (λ (x) x)))
 
 (define (suc N)

@@ -1,0 +1,6 @@
+# Racket
+**/*.rkt~
+**/compiled
+
+# Scheme
+**/*.scm~
